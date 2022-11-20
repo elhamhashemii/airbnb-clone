@@ -1,14 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Now</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <MainLayout />
   <router-view/>
 </template>
 
+<script>
+import MainLayout from './components/layout/MainLayout.vue';
+export default {
+  components:{
+    MainLayout
+  }
+}
+</script>
+
 <style lang="scss">
+@import "./assets/styles/styles.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
