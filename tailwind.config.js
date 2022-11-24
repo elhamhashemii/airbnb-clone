@@ -10,8 +10,7 @@ module.exports = {
       'primary': '#ff385c',
       'secondary' : '#f7f7f7',
       'black' : '#000',
-      'white' : 'fff',
-      
+      'white' : '#fff',
     },
   },
   plugins: [],
