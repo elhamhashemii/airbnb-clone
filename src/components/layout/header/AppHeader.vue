@@ -1,4 +1,26 @@
 <template>
-    <!-- <h1 class="text-primary">Test</h1> -->
-    <h1 class="text-pink-300">Test</h1>
+    <div class="bg-white flex-row justify-between items-center border-t border-b border-gray mt-5 py-5 w-full">
+        <div class="flex justify-center items-center w-2/12">
+            <img :src="logo" alt="airbnb-logo">
+            <span class="text-primary font-bold text-2xl">airbnb</span>
+        </div>
+        <div class="w-4/12">
+            <HeroSelectCard />
+        </div>
+        <div class="w-2/12">1</div>
+    </div>
 </template>
+
+<script>
+import HeroSelectCard from "../../cards/HeroSelectCard.vue"
+export default {
+    components: {
+        HeroSelectCard
+    },
+    setup() {
+        return {
+            logo: require("../../../assets/icons/logo.svg")
+        }
+    }
+} 
+</script>
