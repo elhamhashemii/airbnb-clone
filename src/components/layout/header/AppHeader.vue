@@ -4,18 +4,23 @@
             <img :src="logo" alt="airbnb-logo">
             <span class="text-primary font-bold text-2xl">airbnb</span>
         </div>
-        <div class="w-4/12">
+        <div class="w-3/12">
             <HeroSelectCard />
         </div>
-        <div class="w-2/12">1</div>
+        <div class="w-2/12">
+            <UserAccountCard />
+
+        </div>
     </div>
 </template>
 
 <script>
 import HeroSelectCard from "../../cards/HeroSelectCard.vue"
+import UserAccountCard from "../../cards/UserAccountCard.vue"
 export default {
     components: {
-        HeroSelectCard
+        HeroSelectCard,
+        UserAccountCard
     },
     setup() {
         return {
