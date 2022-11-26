@@ -1,15 +1,17 @@
 <template>
-    <div class="bg-white flex-row justify-between items-center border-t border-b border-gray mt-5 py-5 w-full">
-        <div class="flex justify-center items-center w-2/12">
-            <img :src="logo" alt="airbnb-logo">
-            <span class="text-primary font-bold text-2xl">airbnb</span>
-        </div>
-        <div class="w-3/12">
-            <HeroSelectCard />
-        </div>
-        <div class="w-2/12">
-            <UserAccountCard />
-
+    <div class="bg-white border-b border-gray py-3">
+        <div class="custom-container flex flex-row justify-between items-center">
+            <div class="flex justify-center items-center">
+                <img :src="logo" alt="airbnb-logo" class="w-10">
+                <span class="text-primary font-bold text-2xl">airbnb</span>
+            </div>
+            <div class="ml-16">
+                <HeroSelectCard />
+            </div>
+            <div>
+                <UserAccountCard />
+    
+            </div>
         </div>
     </div>
 </template>
