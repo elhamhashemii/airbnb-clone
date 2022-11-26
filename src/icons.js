@@ -4,7 +4,8 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 // const IconNames = { }
-const Icons = library.add(faPhone, faUser, faBars, faEarthAmericas, faMagnifyingGlass)
+const Icons = library.add(faPhone, faUser, faBars, faEarthAmericas, faMagnifyingGlass, faBarsStaggered)
 export default Icons
