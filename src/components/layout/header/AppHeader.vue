@@ -5,7 +5,7 @@
                 <img :src="logo" alt="airbnb-logo" class="w-10">
                 <span class="text-primary font-bold text-2xl">airbnb</span>
             </div>
-            <div class="ml-16">
+            <div class="ml-24">
                 <HeroSelectCard />
             </div>
             <div>

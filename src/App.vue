@@ -27,18 +27,12 @@ export default {
 
 .custom-container{
   padding: 0 70px;
+  @media only screen and (max-width: 1048px){
+    padding: 0 20px;
+  }
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.radius-100 {
+  border-radius: 100%;
 }
 </style>
