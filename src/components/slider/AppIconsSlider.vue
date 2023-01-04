@@ -17,7 +17,8 @@ import { Swiper, SwiperSlide } from "swiper/vue"
 import 'swiper/css';
 
 
-const width = ref(1920)
+const width = ref(window.screen.width)
+console.log(width.value);
 
 const screen = function () {
     window.addEventListener('resize', (e) => {
