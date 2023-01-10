@@ -4,7 +4,7 @@
             <img :src="logo" alt="airbnb-logo">
             <span class="text-primary font-bold text-2xl">airbnb</span>
         </div>
-        <div class="w-3/12">
+        <div class="w-12/12 xl:w-4/12">
             <HeroSelectCard />
         </div>
         <div class="w-2/12">
