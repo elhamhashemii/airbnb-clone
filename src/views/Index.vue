@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="my-5 flex flex-wrap justify-between items-center">
-        <AppHomeCard v-for="item in 20" class="w-2/10"></AppHomeCard>
+        <AppHomeCard v-for="item in 21" class="w-2/10"></AppHomeCard>
     </div>
 </template>
 
