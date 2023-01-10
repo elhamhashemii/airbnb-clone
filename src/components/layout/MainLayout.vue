@@ -1,5 +1,5 @@
 <template>
-    <AppHeader class="hidden md:flex" />   
+    <AppHeader class="hidden md:block" />   
     <AppMobileHeader class="md:hidden" />
 </template>
 
