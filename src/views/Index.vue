@@ -1,4 +1,5 @@
 <template>
+<div class="text-center">
     <div class="my-10 text-center text-gray-500 flex flex-row justify-between items-center">
         <div class="w-11/12">
             <AppIconsSlider></AppIconsSlider>
@@ -7,9 +8,10 @@
             <AppFilterBtn></AppFilterBtn>
         </div>
     </div>
-    <div class="my-5 flex flex-wrap justify-between items-center">
-        <AppImageSlider v-for="item in data" class="w-2/12" :images="item"></AppImageSlider>
+    <div class="my-5 flex flex-wrap justify-start items-center">
+        <AppImageSlider v-for="item in data" class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12" :images="item"></AppImageSlider>
     </div>
+</div>
 </template>
 
 <script setup>
@@ -49,7 +51,6 @@ api
     .get("https://public.opendatasoft.com/api/records/1.0/search/?dataset=airbnb-listings&q=&facet=host_response_time&facet=host_response_rate&facet=host_verifications&facet=city&facet=country&facet=property_type&facet=room_type&facet=bed_type&facet=amenities&facet=availability_365&facet=cancellation_policy&facet=features")
     .then((res) => {
         apiData.value = res.data.records
-        console.log(res.data.records);
     });
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="px-3">
         <div>
             <Swiper class="image-container rounded-xl" :pagination="true" :modules="modules" >
         <SwiperSlide v-for="img in props.images" :key="img.id">
@@ -8,7 +8,7 @@
         </SwiperSlide>
     </Swiper>
         </div>
-        <div class="text-start my-5 w-full content">
+        <div class="text-start my-5 content">
             <div class="flex flex-row justify-between items-center">
                 <div class="text-black text-sm font-bold">Defiance, Missouri</div>
                 <div class="text-black text-sm font-bold">
@@ -23,16 +23,17 @@
 </template>
 
 <script setup>
+import { ref } from "vue"
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from "swiper";import 'swiper/css';
 import "swiper/css/pagination";
 const modules = [Pagination];
 
-// const loading = ref(true)
+const loading = ref(true)
 
-// setTimeout(() => {
-//     loading.value = false
-// }, 2500);
+setTimeout(() => {
+    loading.value = false
+}, 1500);
 
 const props = defineProps(['images'])
 
@@ -42,7 +43,7 @@ const props = defineProps(['images'])
 
 <style lang="scss" scoped>
 .image-container {
-    width: 16rem;
+    // width: 16rem;
     height: 16rem;
 }
 </style>

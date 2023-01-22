@@ -1,4 +1,5 @@
 <template>
+    <!-- <Swiper slidesPerView="1 sm:2 md:3 lg:4 xl:5" class="icon-swiper" loop> -->
     <Swiper :slidesPerView="width > 1000 ? 15: width > 900 ? 8: width > 450 ? 6: 4" class="icon-swiper" loop>
         <SwiperSlide class="flex flex-col justify-between items-stretch cursor-pointer" v-for="icon in icons" :key="icon.name">
             <div class="text-2xl">
@@ -18,7 +19,6 @@ import 'swiper/css';
 
 
 const width = ref(window.screen.width)
-console.log(width.value);
 
 const screen = function () {
     window.addEventListener('resize', (e) => {
