@@ -1,5 +1,5 @@
 <template>
-    <div class="my-10 text-center text-gray-500 flex flex-row justify-between items-center">
+    <div class="my-10 text-center mx-auto text-gray-500 flex flex-row justify-between items-center">
         <div class="w-11/12">
             <AppIconsSlider></AppIconsSlider>
         </div>

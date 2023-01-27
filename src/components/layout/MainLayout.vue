@@ -1,6 +1,8 @@
 <template>
-    <AppHeader class="hidden md:block" />   
-    <AppMobileHeader class="md:hidden" />
+    <div class="text-center">
+        <AppHeader class="hidden md:block" />   
+        <AppMobileHeader class="md:hidden" />
+    </div>
 </template>
 
 <script>
