@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="my-5 flex flex-wrap justify-start items-center">
-        <AppImageSlider v-for="item in data" class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12" :images="item"></AppImageSlider>
+        <AppImageSlider v-for="item in data" class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12" :images="item" @click="routeToSingle"></AppImageSlider>
     </div>
 </div>
 </template>
@@ -20,6 +20,8 @@ import AppIconsSlider from '@/components/slider/AppIconsSlider.vue';
 import AppFilterBtn from '@/components/btn/AppFilterBtn.vue'
 import AppImageSlider from '@/components/slider/AppImageSlider.vue';
 import { imagesData } from "@/data/images"
+import { useRouter } from "vue-router";
+
 const screen = ref(window.screen.width)
 
 window.addEventListener('resize', (e) => {
@@ -29,6 +31,12 @@ window.addEventListener('resize', (e) => {
 const sliderImages = imagesData;
 
 const images = ref([])
+
+const router = useRouter()
+
+const routeToSingle = () => {
+    router.push({name: 'Room'})
+}
 
 // Data is an array of arrays
 const data = ref([])

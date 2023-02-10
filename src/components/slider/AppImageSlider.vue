@@ -2,13 +2,13 @@
     <div class="px-3">
         <div>
             <Swiper class="image-container rounded-xl" :pagination="true" :modules="modules" >
-        <SwiperSlide v-for="img in props.images" :key="img.id">
+        <SwiperSlide v-for="img in props.images" :key="img.id" class="cursor-pointer">
             <div v-if="loading" class="w-full h-full bg-gray-200"></div>
             <img v-else :src="img.src" class="w-full h-full" :alt="img.id">
         </SwiperSlide>
     </Swiper>
         </div>
-        <div class="text-start my-5 content">
+        <div class="text-start my-5 content cursor-pointer">
             <div class="flex flex-row justify-between items-center">
                 <div class="text-black text-sm font-bold">Defiance, Missouri</div>
                 <div class="text-black text-sm font-bold">
