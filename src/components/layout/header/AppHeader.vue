@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white border-b border-gray py-3">
+    <div class="custom-container bg-white border-b border-gray py-3">
         <div class="custom-container flex flex-row justify-between items-center">
             <div class="flex justify-center items-center">
                 <img :src="logo" alt="airbnb-logo" class="w-10">
