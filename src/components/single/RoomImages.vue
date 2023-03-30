@@ -11,7 +11,4 @@
 
 <script setup>
 import { imagesData } from "@/data/images"
-
-// const images = [imagesData[0], imagesData[1], imagesData[2]]
-
 </script>
