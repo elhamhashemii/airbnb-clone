@@ -7,7 +7,7 @@ const routes = [
       component: Index
     },
     {
-      path: "/room/1",
+      path: "/room",
       name: "Room",
       component: Room
     }
